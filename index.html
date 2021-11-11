@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleindex.css">
+    <link rel="shortcut icon" href="/img/logo_lanche_png_IIg_icon.ico"/>
+    <title>Hamb n' Meat</title>
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <P>Hamb n' Meat</P>
+        </section>
+        
+
+        <section class="link3">
+            <a href="index.html" style="text-decoration:none"><h2>Home</h2></a>
+        </section>
+        <section class="link5">
+            <a href="card.html" style="text-decoration:none"><h2>Cardápio</h2></a>
+        </section>
+        <section class="link6">
+          <a href="sobre.html" style="text-decoration:none"><h2>Sobre nós</h2></a>
+      </section>
+    </header>
+    <main>
+      
+        <img src="img/logo c nome.png   " class="logo2"  height="80px">
+          
+          <div class="slideshow" style="max-width:500px">
+            <img class="mySlides w3-animate-top" src="img/hamb2 1.jpg" style="width:150%">
+            <img class="mySlides w3-animate-bottom" src="img/hamb2 2.jpg" style="width:150%">
+            <img class="mySlides w3-animate-top" src="img/hamb2 3.jpg" style="width:150%">
+            <img class="mySlides w3-animate-bottom" src="img/hamb2 4.jpg" style="width:150%">
+          </div>
+          
+          <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 1500);    
+          }
+          </script>
+    </main>
+    <img class="imglogo" src="img/logo lanche png.png" alt="">
+    <footer>
+
+            <p class="copy">©Copyright 2021 Todos os Direitos Reservados - Lucas da Silva Vargas</p>
+    </footer>
+</body>
+</html>
